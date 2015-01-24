@@ -1,0 +1,11 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"Powelljmp\\Pro5_template\\" : "src"
+		}
+	},
+	"name" : "powelljmp/pro5_template",
+	"require" : {
+		"php" : ">=5.6"
+	}
+}

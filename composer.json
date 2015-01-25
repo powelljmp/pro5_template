@@ -1,11 +1,29 @@
 {
+	"name" : "powelljmp/pro5_template",
+	"repositories" : [{
+			"type" : "package",
+			"package" : {
+				"name" : "powelljmp/phpboilerpackage",
+				"version" : "master",
+				"source" : {
+					"url" : "https://github.com/powelljmp/phpboilerpackage.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.0",
+		"powelljmp/phpboilerpackage" : "master",
+		"symfony/var-dumper" : "2.6.3",
+		"symfony/templating" : "2.6.3"
+	},
+	"minimum-stability" : "dev",
 	"autoload" : {
 		"psr-4" : {
-			"Powelljmp\\Pro5_template\\" : "src"
+			"Powelljmp\\Pro5_template\\" : "src",
+			"powelljmp\\phpboilerpackage\\" : "vendor/powelljmp/phpboilerpackage/src"
 		}
-	},
-	"name" : "powelljmp/pro5_template",
-	"require" : {
-		"php" : ">=5.6"
 	}
 }
